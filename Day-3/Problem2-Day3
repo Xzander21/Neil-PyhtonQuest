@@ -1,0 +1,26 @@
+print("PERFECT NUMBER DETERMINATOR FOR ALF")
+
+while True:
+    num_str = input("Please, enter a positive integer: ")
+
+    if not num_str.isdigit():
+        print("Invalid input! Please enter a valid positive integer.")
+        continue
+
+    num = int(num_str)
+
+    if num <= 0:
+        print("Invalid input! Please enter a positive integer.")
+        continue
+
+    sum_of_divisors = 0
+    for i in range(1, num):
+        if num % i == 0:
+            sum_of_divisors += i
+
+    if sum_of_divisors == num:
+        print(f"{num} is a Perfect Number!")
+    else:
+        print(f"{num} is not a Perfect Number.")
+
+    break

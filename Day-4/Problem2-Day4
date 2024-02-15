@@ -1,0 +1,19 @@
+import math
+
+print("CYLINDER VOLUME CALCULATOR FOR ALF!")
+
+while True:
+    try:
+        radius = float(input("Please, enter the radius of the cylinder: "))
+        height = float(input("Please, enter the height of the cylinder: "))
+
+        if radius <= 0 or height <= 0:
+            print("Invalid input! Both radius and height must be positive values.")
+            continue
+
+        volume = math.pi * radius ** 2 * height
+
+        print("The volume of the cylinder is: {:.2f}".format(volume))
+        break
+    except ValueError:
+        print("Invalid input! Please enter valid float values for radius and height.")

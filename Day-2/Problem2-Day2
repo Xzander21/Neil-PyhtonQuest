@@ -1,0 +1,10 @@
+print("Welcome to BMI Calculator for Alf!")
+
+weight = float(input("Enter your weight in kilograms: "))
+height = float(input("Enter your height in meters: "))
+
+if weight <= 0 or height <= 0:
+    print("Invalid input! Weight and height must be positive numbers.")
+else:
+    bmi = weight / (height ** 2)
+    print("Your BMI is:", bmi)

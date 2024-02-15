@@ -1,0 +1,15 @@
+import math
+
+print("HYPOTENUSE CALCULATOR FOR ALF!")
+
+while True:
+    try:
+        side1 = float(input("Please enter the length of Side A: "))
+        side2 = float(input("Please enter the length of Side B: "))
+
+        hypotenuse = math.sqrt(side1 ** 2 + side2 ** 2)
+
+        print("The hypotenuse of the right-angled triangle is: {:.2f}".format(hypotenuse))
+        break
+    except ValueError:
+        print("Invalid input! Please enter valid float values for the side lengths.")

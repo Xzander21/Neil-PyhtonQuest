@@ -1,0 +1,13 @@
+print("PALINDROME CHECKER FOR ALF")
+
+
+word = input("Please, enter a word/s to check: ")
+
+
+reverse_word = word[::-1]
+
+
+if word.lower() == reverse_word.lower():
+    print(f"The word '{word}' is a palindrome!")
+else:
+    print(f"The word '{word}' is not a palindrome.")

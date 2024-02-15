@@ -1,0 +1,16 @@
+print("VOWEL COUNTER FOR ALF")
+
+word = input("Please, enter a word/s to check: ")
+
+
+count = 0
+
+
+count += word.lower().count('a')
+count += word.lower().count('e')
+count += word.lower().count('i')
+count += word.lower().count('o')
+count += word.lower().count('u')
+
+
+print("The number of vowels in '{}' is: {}".format(word, count))
